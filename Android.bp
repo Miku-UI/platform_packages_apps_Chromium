@@ -1,0 +1,21 @@
+//
+// Copyright (C) 2024 Miku UI
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app_import {
+    name: "Chromium",
+    owner: "google",
+    apk: "app/ChromePublic.apk",
+    presigned: true,
+    preprocessed: true,
+    product_specific: true,
+    overrides: [
+        "QuickSearchBox",
+        "Browser2",
+    ],
+    dex_preopt: {
+        enabled: false,
+    },
+}
